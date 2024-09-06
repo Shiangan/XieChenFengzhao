@@ -3,331 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="劉及人訃告">
-    <meta property="og:description" content="追思劉及人先生雲端訃告">
-    <meta property="og:image" content="https://shiangan.com/Shiangan/Liu-Jiren/image/logo.jpg">
-    <meta property="og:url" content="https://shiangan.com/Shiangan/Liu-Jiren">
+    <head>
+    <meta property="og:title" content="黃徐玉珠夫人訃告">
+    <meta property="og:description" content="追思黃徐玉珠夫人-祥安生命雲端訃告-敬邀您一同追思緬懷我們摯愛的親人,黃徐玉珠">
+    <meta property="og:image" content="https://shiangan.com/Shiangan/徐玉珠/image/logo.jpg">
+    <meta property="og:url" content="https://shiangan.com/Shiangan/徐玉珠">
     <meta property="og:type" content="Shiangan-obituary">
+</head>
     <title>訃聞公告</title>
     <link rel="stylesheet" href="obituary.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-    <style>
-        /* 通用样式 */
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header .logo {
-            max-width: 150px;
-            height: auto;
-        }
-
-        h1, h2, h3 {
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 2em;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            color: #2980b9;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-top: 10px;
-            color: #2980b9;
-        }
-
-        /* 主要照片 */
-        .main-photo-section {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .main-photo-section img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .main-photo-section img:hover {
-            transform: scale(1.05);
-        }
-
-        /* 纸本訃告 */
-        .paper-obituary-section {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .paper-obituary-section img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ddd;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        /* 追思与怀念 */
-        #remembrance {
-            margin: 20px;
-        }
-
-        .remembrance-details {
-            background: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .remembrance-item {
-            margin-bottom: 20px;
-        }
-
-        /* 花篮画廊 */
-        #flower-basket-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .flower-basket-item {
-            max-width: 200px;
-            text-align: center;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .flower-basket-item:hover {
-            transform: scale(1.05);
-        }
-
-        .flower-basket-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-        }
-
-        /* 名片部分 */
-        #business-card {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .business-card-img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ddd;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        /* 联系信息 */
-        #contact-info, #transportation-info, #chauffeur-info {
-            background: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            margin: 20px;
-        }
-
-        /* 社交媒体分享 */
-        #social-share {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        #social-share a {
-            margin: 0 10px;
-            display: inline-block;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        #social-share img {
-            width: 40px;
-            height: auto;
-        }
-
-        #social-share a:hover {
-            transform: scale(1.1);
-        }
-
-        /* 固定联系信息 */
-        #fixed-links {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-            z-index: 1000;
-        }
-
-        #fixed-links img {
-            width: 50px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        #fixed-links img:hover {
-            transform: scale(1.1);
-        }
-
-        /* 页脚 */
-        footer {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* 淡入效果 */
-        .fade-in-text {
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
 </head>
+    
+    <audio id="bg-music" src="珍珠港事件.mp3" autoplay></audio>
 
-<body>
-    <audio id="background-music" autoplay loop>
-        <source src="珍珠港事件.mp3" type="audio/mpeg">
-        瀏覽器不支持音頻播放。
-    </audio>
-
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            let audio = document.getElementById('bg-music');
+            audio.play().catch(function(error) {
+                console.log('自动播放失败：', error);
+                // 如果无法自动播放，可以在这里显示提示用户交互的UI
+            });
+        }, 1000); // 延迟1秒播放
+    };
+</script>
+ 
     <header>
         <img src="image/logo.png" alt="Logo" class="logo">
-        <h1>劉及人先生 訃告</h1>
+        <h1>黃徐玉珠夫人 訃告</h1>
     </header>
 
     <main>
         <!-- 主要照片部分 -->
         <section class="main-photo-section">
-            <img id="main-photo" src="image/劉及人的主要照片.JPG" alt="追思照片">
+            <img id="main-photo" src="黃徐玉珠的主要照片.JPG" alt="追思照片">
             <p id="life-story">
-                <strong>我們敬愛的親人，謝陳鳳昭夫人，於113年09月03日，晚上06：50，在家人的陪伴下，安詳離世。</strong>
+                <strong>我們敬愛的親人，黃徐玉珠夫人，於113年08月26日，早上08時50分，在家人的陪伴下，安詳離世。</strong>
             </p>
-            <p>孝男 奇軒 親視含殮 遵禮成服 豎靈於 台北懷愛館（原第二殯儀館）<strong>景行樓 3F 蓮位堂［L1-17]</strong></p>
-            <p>將設奠於113年09月11日（三）舉行追思會儀式，感謝親友們的致意與陪伴，給予謝陳鳳昭夫人最真切的祝福，家人們銘記在心，衷心感謝。</p>
+                                         <p>杖期夫 黃德堂 率 孝女 佳玲 親視含殮 遵禮成服 豎靈於 桃園 佛緣苑會館 2F [牌位區15號]</p>
+                           <p>將設奠於113年09月18日（三）舉行追思會儀式，感謝親友們的致意與陪伴，給予黃徐玉珠夫人最真切的祝福，家人們銘記在心，衷心感謝。</p>
         </section>
 
         <!-- 訃告紙本部分 -->
         <section class="paper-obituary-section">
             <h2><strong>訃告正本</strong></h2>
-            <a href="謝陳鳳昭訃聞.JPG" data-lightbox="paper-obituary" data-title="訃聞紙本">
-                <img id="paper-obituary" src="謝陳鳳昭訃聞.JPG" alt="訃聞紙本">
+            <a href="徐玉珠訃聞.JPG" data-lightbox="paper-obituary" data-title="訃聞紙本">
+                <img id="paper-obituary" src="徐玉珠訃聞.JPG" alt="訃聞紙本">
             </a>
         </section>
 
-        <!-- 追思與懷念 -->
+        <!-- 追思與緬懷部分 -->
         <section id="remembrance">
+            <h2><strong>追思緬懷</strong></h2>
             <div class="remembrance-details">
-                <h3>追思與懷念</h3>
-                <div class="remembrance-item fade-in-text">
-                    <p>親友們的每一個腳步，每一個心意，都是對劉及人先生最深刻的懷念和敬意。我們將於113年09月11日（三），於懷恩堂景行樓蓮位堂舉行追思會，歡迎大家前來送行。</p>
+                <div class="remembrance-item">
+                    <h3><strong>豎靈地點</strong></h3>
+                    <p><strong>桃園 佛緣苑會館 2F [牌位區15號]</strong></p>
+                    <p><strong>地址：330桃園市桃園區大有路920號</a></strong></p>
                 </div>
+                <div class="remembrance-item">
+                    <h3><strong>出殯地點</strong></h3>
+                    <p><strong><a href="https://maps.app.goo.gl/Gy4b5KzT3Z6YGmXB8?g_st=com.google.maps.preview.copy" target="_blank">桃園市立殯儀館 [ 懷德廳 ]</a></strong></p>
+                    <p><strong>地址：330桃園市桃園區大有路916號</a></strong></p>
+                </div>
+                <div class="remembrance-item">
+                    <h3><strong>出殯日期</strong></h3>
+                    <p><strong>中華民國 2024年09月18日（三）</strong></p>
+                </div>
+                <div class="remembrance-item">
+                    <h3><strong>追思會時間</strong></h3>
+                    <p><strong>上午 09:30 家奠禮</strong></p>
+                    <p><strong>上午 10:00 公奠禮</strong></p>
+                </div>
+
+                <!-- 地圖嵌入 -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57846.78881670233!2d121.21845152659498!3d25.019670873142957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681e361ce9b9c7%3A0xb4c3029db3d7b0b2!2z5qGD5ZyS5biC5pS_5bqc5q6v6JGs566h55CG5omA!5e0!3m2!1szh-TW!2stw!4v1724751528784!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
-        <!-- 花篮展示部分 -->
-        <section id="flower-basket-gallery">
-            <div class="flower-basket-item">
-                <img src="image/flower1.jpg" alt="花篮1">
-            </div>
-            <div class="flower-basket-item">
-                <img src="image/flower2.jpg" alt="花篮2">
-            </div>
-            <div class="flower-basket-item">
-                <img src="image/flower3.jpg" alt="花篮3">
-            </div>
-        </section>
+        <!-- 感謝信息部分 -->
+        <div class="remembrance-thanks">
+            <p class="fade-in-text"><strong>感謝親友們在這段時間的慰問與關心，您的關懷和鼓勵，陪伴我們度過了這段艱難的時光。</strong></p>
+            <p class="fade-in-text"><strong> 敬邀您，與我們一同追思懷念及人先生的美好回憶，並向您獻上最深的敬意。</strong></p>
+            <p class="fade-in-text"><strong>謝謝您！鞠躬。</strong></p>
+            <p class="fade-in-text"><strong>聯繫電話 佳玲 tel:0973-035-148</strong> </p> 
+        </div>
 
-        <!-- 名片部分 -->
+            <style>
+        /* 页脚部分的样式 */
+        footer {
+            background-color: #f4f4f4; /* 背景颜色 */
+            padding: 20px; /* 内边距 */
+            text-align: center; /* 文本居中 */
+            font-family: Arial, sans-serif; /* 字体 */
+        }
+
+        footer p {
+            margin: 5px 0; /* 上下外边距 */
+            color: #333; /* 文字颜色 */
+        }
+
+        .footer-signature {
+            font-weight: bold; /* 字体加粗 */
+        }
+
+        .bold {
+            font-weight: bold; /* 字体加粗 */
+            text-decoration: none; /* 去掉链接下划线 */
+        }
+
+        footer img {
+            vertical-align: middle; /* 图标垂直对齐 */
+        }
+
+        footer a {
+            margin: 0 10px; /* 图标间距 */
+        }
+
+        .fade-in-text {
+    opacity: 0; /* 初始透明度为0 */
+    transition: opacity 2s ease-in-out; /* 渐变效果 */
+}
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slides div').length;
+
+    function showSlide(index) {
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlide(slideIndex);
+    }
+
+    setInterval(nextSlide, 3000); // 每3秒切换一次幻灯片
+</script>
+        </style>
+
+        <!-- 致贈花籃部分 -->
+        <section id="donate-flower">
+            <h2><strong>致贈花籃</strong></h2>
+            <p>為求會場一致性，致贈花籃請參見以下選項：</p>
+            <a href="javascript:void(0);" id="show-flower-baskets" class="btn"><strong>致贈花籃</strong></a>
+
+                <!-- 花篮画廊，默认隐藏 -->
+    <div id="flower-basket-gallery" style="display: none;">
+        <div class="flower-basket-item">
+            <a href="image/花籃A.JPG" data-lightbox="flower-baskets" data-title="A款NT$2,500/1對">
+                <img src="image/花籃A.JPG" alt="花籃A">
+            </a>
+            <p class="price"><strong>A款NT$2,500/1對</strong></p>
+        </div>
+        <div class="flower-basket-item">
+            <a href="image/花籃B.JPG" data-lightbox="flower-baskets" data-title="B款NT$3,000/1對">
+                <img src="image/花籃B.JPG" alt="花籃B">
+            </a>
+            <p class="price"><strong>B款NT$3,000/1對</strong></p>
+        </div>
+        <div class="flower-basket-item">
+            <a href="image/花籃C.JPG" data-lightbox="flower-baskets" data-title="C款NT$3,000/1對">
+                <img src="image/花籃C.JPG" alt="花籃C">
+            </a>
+            <p class="price"><strong>C款NT$3,500/1對</strong></p>
+        </div>
+        <div class="flower-basket-item">
+            <a href="image/花籃D.JPG" data-lightbox="flower-baskets" data-title="D款NT$3,000/1對">
+                <img src="image/花籃D.JPG" alt="花籃D">
+            </a>
+            <p class="price"><strong>D款NT$4,000/1對</strong></p>
+        </div>
+        <div class="flower-basket-item">
+            <a href="image/花籃E.JPG" data-lightbox="flower-baskets" data-title="E款NT$3,000/1對">
+                <img src="image/花籃E.JPG" alt="花籃E">
+            </a>
+            <p class="price"><strong>E款NT$5,000/1對</strong></p>
+        </div>
+        <div class="flower-basket-item">
+            <a href="image/花籃F.JPG" data-lightbox="flower-baskets" data-title="F款NT$3,000/1對">
+                <img src="image/花籃F.JPG" alt="花籃F">
+            </a>
+            <p class="price"><strong>F款NT$5,500/1對</strong></p>
+        </div>
+        <div class="flower-basket-item">
+            <a href="image/花籃G.JPG" data-lightbox="flower-baskets" data-title="G款NT$3,000/1對">
+                <img src="image/花籃G.JPG" alt="花籃G">
+            </a>
+            <p class="price"><strong>G款NT$6,000/1對</strong></p>
+        </div>
+        <div class="flower-basket-item">
+            <a href="image/花籃H.JPG" data-lightbox="flower-baskets" data-title="H款NT$3,000/1對">
+                <img src="image/花籃H.JPG" alt="花籃H">
+            </a>
+            <p class="price"><strong>H款NT$6,500/1對</strong></p>
+        </div>
+        <!-- 依此类推 -->
+    </div>
+    <p><br>訂購花籃請點選<a href="https://line.me/ti/p/lAYTmfcqvp" target="_blank"><strong>這裡</strong></a>。</p>
+</section>
+
+        <style>
+
+/* 致赠花篮部分 */
+#donate-flower {
+    margin-bottom: 20px;
+}
+
+#flower-basket-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flower-basket-item {
+    max-width: 200px;
+    text-align: center;
+}
+
+.flower-basket-item img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* 悬停效果 */
+.flower-basket-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* 略微放大效果 */
+}
+
+/* 响应式设计 - 小屏幕适配 */
+@media (max-width: 480px) {
+    .flower-basket-item {
+        max-width: 100%; /* 在小屏幕上让项目占满可用空间 */
+    }
+}
+</style>
+
+    <script>
+    document.getElementById('show-flower-baskets').addEventListener('click', function() {
+        const gallery = document.getElementById('flower-basket-gallery');
+        if (gallery.style.display === 'none' || gallery.style.display === '') {
+            gallery.style.display = 'flex';
+        } else {
+            gallery.style.display = 'none';
+        }
+    });
+</script>
+        
+        <!-- 固定聯絡方式 -->
+        <div id="fixed-links">
+            <a href="tel:0938179858" class="bold">
+                <img src="image/24小時專線.png" alt="24小時服務電話" style="width: 70px; height: 30px;">
+            </a>
+            <a href="https://line.me/ti/p/lAYTmfcqvp" target="_blank" class="bold">
+                <img src="image/IMG_4177.webp" alt="LINE 聯絡我們" style="width: 50px; height: 50px;">
+            </a>
+        </div>
+
+        <!-- 名片及分享按钮部分 -->
         <section id="business-card">
-            <h2>名片</h2>
-            <img class="business-card-img" src="image/名片.jpg" alt="名片">
-        </section>
-
-        <!-- 联系信息 -->
-        <section id="contact-info">
-            <h3>联系我们</h3>
-            <p>電話：02-12345678</p>
-            <p>LINE: @12345</p>
-        </section>
-
-        <!-- 交通资讯 -->
-        <section id="transportation-info">
-            <h3>交通信息</h3>
-            <p>捷運資訊：板南線 亞東醫院站 3號出口</p>
-            <p>公車資訊：亞東醫院站 (262, 307, 657)</p>
-        </section>
-
-        <!-- 專車資訊 -->
-        <section id="chauffeur-info">
-            <h3>專車服務</h3>
-            <p>提供往返懷恩堂的專車服務，詳情請聯繫服務電話。</p>
-        </section>
-
-        <!-- 社交分享 -->
-        <section id="social-share">
-            <a href="#">
-                <img src="image/facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="#">
-                <img src="image/line-icon.png" alt="LINE">
-            </a>
+            <img src="未命名設計.png" alt="名片" class="business-card-img">
+            <div id="share-buttons">
+                <p><strong>分享此頁面</strong></p>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://shiangan.github.io/XuYuzhu/" target="_blank" class="share-btn fb-share-btn">
+                    <img src="image/fb.png" alt="Share on Facebook">
+                </a>
+                <a href="https://line.me/R/msg/text/?https://shiangan.github.io/XuYuzhu/" target="_blank" class="share-btn line-share-btn">
+                    <img src="image/line.png" alt="Share on Line">
+                </a>
+            </div>
         </section>
     </main>
 
+    <!-- 页脚 -->
     <footer>
-        <p>&copy; 2024 劉及人先生訃告。 All rights reserved.</p>
-    </footer>
+    <p>承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</p>
+    <p>© 2024 黃徐玉珠訃聞公告 | <span class="footer-signature">祥安生命有限公司</span> 版權所有 |</p>
+</footer>
 
-    <!-- 固定联系信息 -->
-    <div id="fixed-links">
-        <a href="tel:+886212345678">
-            <img src="image/phone-icon.png" alt="電話">
-        </a>
-        <a href="https://line.me/ti/p/@12345">
-            <img src="image/line-icon.png" alt="LINE">
-        </a>
-    </div>
+     
+    <!-- JavaScript -->
+
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            let audio = document.getElementById('bg-music');
+            audio.play().catch(function(error) {
+                console.log('自动播放失败：', error);
+                // 如果无法自动播放，可以在这里显示提示用户交互的UI
+            });
+        }, 1000); // 延迟1秒播放
+    };
+</script>
+
+        // 幻灯片播放功能
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slides div");
+            slides.forEach(slide => slide.style.display = "none");
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // 每隔3秒切換幻燈片
+        }
+
+        function plusSlides(n) {
+            slideIndex += n;
+            const slides = document.querySelectorAll(".slides div");
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            if (slideIndex < 1) { slideIndex = slides.length; }
+            showSlides();
+        }
+
+        showSlides(); // 初次調用以顯示第一張幻燈片
+
+        // 花篮画廊显示/隐藏功能
+        document.getElementById('show-flower-baskets').addEventListener('click', function() {
+            const gallery = document.getElementById('flower-basket-gallery');
+            if (gallery.style.display === 'none') {
+                gallery.style.display = 'flex';
+            } else {
+                gallery.style.display = 'none';
+            }
+        });
+
+        // 追思动画
+        function animateTimeline() {
+            const timelineBlocks = document.querySelectorAll(".VivaTimeline .event");
+            timelineBlocks.forEach(function (block) {
+                const rect = block.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.75 && rect.bottom >= 0) {
+                    block.classList.add("animated");
+                } else {
+                    block.classList.remove("animated");
+                }
+            });
+        }
+
+        // 初始化动画并监听滚动事件
+        animateTimeline();
+        window.addEventListener('scroll', animateTimeline);
+
+        // 渐显文本效果
+        const fadeInTexts = document.querySelectorAll('.fade-in-text');
+        fadeInTexts.forEach((text, index) => {
+            setTimeout(() => {
+                text.style.opacity = '1';
+            }, index * 1500); // 每段延迟1.5秒
+        });
+    </script>
 </body>
 </html>
