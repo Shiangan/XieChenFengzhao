@@ -93,41 +93,7 @@
             <p class="fade-in-text"><strong>聯繫電話 靜玟 tel:0953-500-055</strong> </p> 
         </div>
 
-            <style>
-        /* 页脚部分的样式 */
-        footer {
-            background-color: #f4f4f4; /* 背景颜色 */
-            padding: 20px; /* 内边距 */
-            text-align: center; /* 文本居中 */
-            font-family: Arial, sans-serif; /* 字体 */
-        }
-
-        footer p {
-            margin: 5px 0; /* 上下外边距 */
-            color: #333; /* 文字颜色 */
-        }
-
-        .footer-signature {
-            font-weight: bold; /* 字体加粗 */
-        }
-
-        .bold {
-            font-weight: bold; /* 字体加粗 */
-            text-decoration: none; /* 去掉链接下划线 */
-        }
-
-        footer img {
-            vertical-align: middle; /* 图标垂直对齐 */
-        }
-
-        footer a {
-            margin: 0 10px; /* 图标间距 */
-        }
-
-        .fade-in-text {
-    opacity: 0; /* 初始透明度为0 */
-    transition: opacity 2s ease-in-out; /* 渐变效果 */
-}
+ 
 
 <script>
     let slideIndex = 0;
@@ -145,7 +111,6 @@
 
     setInterval(nextSlide, 3000); // 每3秒切换一次幻灯片
 </script>
-        </style>
 
         <!-- 致贈花籃部分 -->
         <section id="donate-flower">
@@ -210,46 +175,49 @@
 
         <style>
 
-/* 致赠花篮部分 */
-#donate-flower {
-    margin-bottom: 20px;
-}
-
-#flower-basket-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.flower-basket-item {
-    max-width: 200px;
-    text-align: center;
-}
-
-.flower-basket-item img {
-    width: 100%;
-    height: auto;
-}
-
-.price {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-/* 悬停效果 */
-.flower-basket-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* 略微放大效果 */
-}
-
-/* 响应式设计 - 小屏幕适配 */
-@media (max-width: 480px) {
-    .flower-basket-item {
-        max-width: 100%; /* 在小屏幕上让项目占满可用空间 */
-    }
-}
-</style>
+        #flower-basket-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .flower-basket-item {
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .flower-basket-item img {
+            width: 100%;
+            height: auto;
+        }
+        .price {
+            padding: 10px;
+            background: #fff;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .flower-basket-item {
+                max-width: 100%;
+            }
+        }
+    </style>
 
     <script>
     document.getElementById('show-flower-baskets').addEventListener('click', function() {
